@@ -26,13 +26,3 @@ app.config(['$routeProvider', function($routeProvider){
 // app.controller('appController',['$scope','$http', function($scope, $http){
 //     $scope.name = "ravi";
 // }])
-
-app.controller('blogController',['$scope','$http', function($scope, $http){
-    $scope.name = "I am blog page";
-}])
-app.controller('contactController',['$scope','$http', function($scope, $http){
-    $scope.name = "I'am contact page";
-}])
-app.controller('homeController',['$scope','$http', function($scope, $http){
-    $scope.name = "ravi's";
-}])
