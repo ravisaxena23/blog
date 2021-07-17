@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravisaxena23/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravisaxena23/blog/issues"
+  },
+  "homepage": "https://github.com/ravisaxena23/blog#readme",
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-contrib-concat": "^1.0.1"
+  }
+}
