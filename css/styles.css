@@ -1,3 +1,10 @@
+.pad-1 {
+  padding: 30px; }
+
+.blog-btn {
+  margin: 10px;
+  width: -webkit-fill-available; }
+
 .element {
   width: 100px;
   height: 100px;

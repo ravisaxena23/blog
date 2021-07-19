@@ -1,3 +1,51 @@
-<div ng-controller = "blogController">
-    {{name}}
+<div ng-controller="blogController">
+
+    <div class="row">
+        <div class="col-8 pad-1">Show Blog
+            <!-- <li ng-repeat="type in blogtype" ng-show="type.available"><h2>{{type}}</h2></li> -->
+        </div>
+        <div class="col-4 pad-1">
+            <h3 style="text-align: center;">Add Blog</h3>
+
+            <form class="pad-1" ng-submit="addBlog()" novalidate>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1" ng-model="blog.username" ng-required="true">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                        aria-describedby="basic-addon2" ng-model="blog.email" ng-required="true">
+                    <span class="input-group-text" id="basic-addon2">xyz@example.com</span>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">Video/Image URL</span>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                        ng-model="blog.imgURL" ng-required="true">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Blog Title" aria-label="Blog-title"
+                        ng-model="blog.title" ng-required="true">
+                    <span class="input-group-text">@</span>
+                    <select class="form-select" aria-label="Default select example" ng-required="true">
+                        <option selected value="">Type</option>
+                        <option ng-repeat="type in blogtype" value="type" ng-model="blog.type">{{type}}</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">Blog content</span>
+                    <textarea class="form-control" aria-label="With textarea" ng-model="blog.content"
+                        ng-required="true"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-dark blog-btn">Submit</button>
+            </form>
+            <h5 style="text-align: center;">{{message}}</h5>
+        </div>
+    </div>
+</div>
+
 </div>
